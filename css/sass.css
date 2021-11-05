@@ -6,7 +6,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2); }
 
-input:focus, textArea:focus, .fotosGaleriaAbajo img:hover {
+input:focus, textArea:focus {
   outline: none !important;
   border-color: #b4243c;
   box-shadow: 0 0 10px #b4243c; }
@@ -213,15 +213,8 @@ section ul li {
   row-gap: 4rem;
   column-gap: 4rem; }
 
-.fotosGaleriaAbajo {
-  margin: 2rem;
-  width: 640px;
-  height: 360px; }
-
-.fotosGaleriaAbajo img:hover {
-  margin: 2rem;
-  width: 640px;
-  height: 360px; }
+.galeriaMain {
+  row-gap: 70px; }
 
 /*aca use maps en bodrder color*/
 .fotosIndex img {

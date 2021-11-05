@@ -248,18 +248,20 @@ textArea:focus {
     column-gap: 4rem;
 }
 
-.fotosGaleriaAbajo{
+.galeriaMain{
+
+    row-gap: 70px;
     
-    margin: 2rem;
-    width: 640px;
-    height: 360px;
+    
 }
-.fotosGaleriaAbajo img:hover{
-    @extend %focusContact;
-    margin: 2rem;
-    width: 640px;
-    height: 360px;
-}
+
+
+
+
+
+
+
+
 /*aca use maps en bodrder color*/
 .fotosIndex img:hover{
     @extend %gridGalery;
