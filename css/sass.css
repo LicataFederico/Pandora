@@ -22,26 +22,59 @@ input:focus, textArea:focus {
   /*aca use maps en bodrder color*/
   border-color: #b4243c; }
 
+.gal-item {
+  overflow: hidden;
+  padding: 8px; }
+
+.gal-item .box {
+  height: 100%;
+  overflow: hidden; }
+
+.box img {
+  height: 100%;
+  width: auto;
+  object-fit: cover; }
+
 @media only screen and (max-width: 500px) {
   #footerMediaQ {
+    display: none; }
+  .navBarraIconos {
+    display: flex;
+    justify-content: space-evenly; }
+  .centradoNavbar {
+    position: relative;
+    right: 15px; }
+  .logoCenter {
+    display: flex;
+    justify-content: center; }
+  .bottom-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    margin: 0.2rem; }
+  .botonResponsive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+  .hideImage {
     display: none; } }
 
 @media only screen and (max-width: 767px) {
+  .botonResponsive {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
   #footerMediaQ {
-    display: none; } }
-
-/*npm run watch-css*/
-* {
-  font-family: 'Yaldevi', sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  list-style: none;
-  margin: 0px;
-  box-sizing: border-box; }
-
-header {
-  position: relative;
-  color: #b4243c; }
+    display: none; }
+  .navBarraIconos {
+    display: flex;
+    justify-content: space-evenly; }
+  .logoCenter {
+    display: inline;
+    justify-content: center; } }
 
 .gal-item {
   overflow: hidden;
@@ -58,6 +91,19 @@ header {
 
 .carousel-control-next, .carousel-control-prev {
   top: 150px; }
+
+/*npm run watch-css*/
+* {
+  font-family: 'Yaldevi', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  margin: 0px;
+  box-sizing: border-box; }
+
+header {
+  position: relative;
+  color: #b4243c; }
 
 .logo {
   position: relative;
@@ -80,10 +126,6 @@ section ul li {
   list-style: none;
   color: black;
   background-color: black; }
-
-.logo {
-  margin: 0%;
-  padding: 0%; }
 
 .header {
   position: sticky; }
@@ -147,6 +189,10 @@ section ul li {
   color: black;
   word-spacing: 300px;
   text-decoration: none; }
+  .listaMenu__Hamburguer {
+    position: relative;
+    color: black;
+    text-decoration: none; }
 
 .bg-image-vertical {
   position: relative;
@@ -214,9 +260,13 @@ section ul li {
   column-gap: 4rem; }
 
 .galeriaMain {
+  margin-bottom: 150px;
   row-gap: 70px; }
 
 /*aca use maps en bodrder color*/
+.carousel-control-next, .carousel-control-prev {
+  top: 500px; }
+
 .fotosIndex img {
   justify-content: space-around;
   display: flex;

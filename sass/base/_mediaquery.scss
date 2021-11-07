@@ -4,6 +4,31 @@
     #footerMediaQ{
         display:none;
     }
+    .navBarraIconos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .centradoNavbar{
+        position: relative;
+        right: 15px;
+    }
+    .logoCenter{
+        display:flex;
+        justify-content: center;
+    }
+    .bottom-left{
+        @include flex(center);
+        margin: 5px;
+        margin: 0.2rem;
+    }
+    .botonResponsive{
+        @include flex(center);
+        align-items: center;
+    }
+    .hideImage{
+        display: none;
+    }
+    
 }
 // @media only screen and (max-width: 800px) {
 //     #footerMediaQ{
@@ -12,7 +37,21 @@
 // }
 
 @media only screen and (max-width: 767px) {
+    
+    .botonResponsive{
+        @include flex(center);
+        align-items: center;
+    }
     #footerMediaQ{
         display:none;
+    }
+    .navBarraIconos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .logoCenter{
+        display:inline;
+        justify-content: center;
     }
 }

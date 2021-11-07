@@ -4,6 +4,10 @@
 @import "./base/_extend.scss";
 @import "./base/_contact.scss";
 @import "./base/_mediaquery.scss";
+@import "./base/_gallery.scss";
+@import "./base/_help.scss";
+@import "./base/_contact.scss";
+@import "./base/_index.scss";
 
 
 
@@ -25,25 +29,9 @@ header {
     color:$color-principal;
 }
 
-.gal-item{
-	overflow: hidden;
-	padding: 8px;
-}
-.gal-item .box{
-	height: 100%;
-	overflow: hidden;
-}
-.box img{
-	height: 100%;
-	width: auto;
-	object-fit:cover;
-}
 
 
 
-.carousel-control-next, .carousel-control-prev{
-    top: 150px;
-}
 
 
 .logo {
@@ -71,10 +59,7 @@ section ul li{
     
 
 }
-.logo{
-    margin: 0%;
-    padding: 0%;
-}
+
 
 .header{
     position: sticky;
@@ -152,6 +137,11 @@ section ul li{
     word-spacing: 300px;
     text-decoration: none;
     %__submenu{
+        position: relative;
+        color: black;
+        text-decoration: none;
+    }
+    &__Hamburguer{
         position: relative;
         color: black;
         text-decoration: none;
@@ -249,12 +239,11 @@ textArea:focus {
 }
 
 .galeriaMain{
-
+    margin-bottom: 150px;
     row-gap: 70px;
     
     
 }
-
 
 
 
@@ -267,7 +256,9 @@ textArea:focus {
     @extend %gridGalery;
 }
 
-
+.carousel-control-next, .carousel-control-prev{
+    top:500px;
+}
 
 .fotosIndex img{
     justify-content: space-around;
