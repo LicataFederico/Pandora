@@ -4,6 +4,7 @@
 @import "./base/_extend.scss";
 @import "./base/_contact.scss";
 @import "./base/_mediaquery.scss";
+
 /*npm run watch-css*/
 *{
     font-family: 'Yaldevi', sans-serif;
@@ -118,11 +119,7 @@ section ul li{
     background-position: right center;
     background-size: auto 100%;
 }
-@media (min-width: 1025px) {
-    .h-custom-2 {
-    height: 100%;
-    }
-}
+
 input:focus { 
     @extend %focusContact;
 }
@@ -163,16 +160,7 @@ textArea:focus {
 	position: relative;
 	z-index: 2;
 }
-@media screen and (max-width:900px) {
-    .carrito{
-        width: 50%;
-        display: none;
-    }
-    img {
-        width: 75%;
-        display: inline-block;
-    }
-}
+
 ul ul {
     display: none;
     position: absolute;

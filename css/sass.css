@@ -38,6 +38,9 @@ input:focus, textArea:focus {
 @media only screen and (max-width: 500px) {
   #footerMediaQ {
     display: none; }
+  .cartSize {
+    font-size: 12px;
+    margin-top: 7px; }
   .navbar {
     display: block;
     visibility: visible; }
@@ -91,6 +94,15 @@ input:focus, textArea:focus {
     align-items: center; }
   .hide {
     display: none; } }
+
+@media screen and (max-width: 900px) {
+  img {
+    width: 75%;
+    display: inline-block; } }
+
+@media (min-width: 1025px) {
+  .h-custom-2 {
+    height: 100%; } }
 
 /*npm run watch-css*/
 * {
@@ -201,10 +213,6 @@ section ul li {
   background-position: right center;
   background-size: auto 100%; }
 
-@media (min-width: 1025px) {
-  .h-custom-2 {
-    height: 100%; } }
-
 .bottom-left {
   margin: 0.2rem; }
 
@@ -237,14 +245,6 @@ section ul li {
   transition: all 0.3s ease-out;
   position: relative;
   z-index: 2; }
-
-@media screen and (max-width: 900px) {
-  .carrito {
-    width: 50%;
-    display: none; }
-  img {
-    width: 75%;
-    display: inline-block; } }
 
 ul ul {
   display: none;
