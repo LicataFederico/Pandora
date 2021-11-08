@@ -4,15 +4,7 @@
 @import "./base/_extend.scss";
 @import "./base/_contact.scss";
 @import "./base/_mediaquery.scss";
-@import "./base/_gallery.scss";
-@import "./base/_contact.scss";
-@import "./base/_index.scss";
-
-
-
-
 /*npm run watch-css*/
-
 *{
     font-family: 'Yaldevi', sans-serif;
     font-weight: bold;
@@ -21,70 +13,44 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
 .navbar{
     display: none;
     visibility: hidden;
 }
-
 header {
     position: relative;
     color:$color-principal;
 }
-
-
-
-
-
-
 .logo {
     position: relative ; top: 2px; ;left: 2px; ;
     margin: 0%;
     padding: 0%;
     color: black;
-
 }
-
-
 section ul li{
     display: inline;
     right: 0%;
     color: black;
 }
-
-
 .navBarraIconos{
     @include flex(right);
     padding: 0%;    
     list-style: none;
     color: black;
     background-color:black
-    
-
 }
-
-
 .header{
     position: sticky;
 }
-
-
 .centrado {
     @include flex(space-evenly);
     margin: 5px;
 }
-
-
-
-
-
-
 .carrito {
     @include flex(flex-end);
     align-items: center;
     margin:0.0.063rem;
     padding:0.938rem;
-
     &__search-box{
         width: fit-content;
         height: fit-content;
@@ -144,11 +110,7 @@ section ul li{
         color: black;
         text-decoration: none;
     }
-    
 }
-
-
-
 .bg-image-vertical {
     position: relative;
     overflow: hidden;
@@ -161,104 +123,29 @@ section ul li{
     height: 100%;
     }
 }
-
-.contactoMain{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr ;
-    border: solid black;
-
-        &__inputContact{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-        }
-
-        &__mapas{
-            height: 70%;
-            width: 30%;
-        }
-
-        &__button1{
-            @include flex(space-evenly);
-            margin: 0px;
-            text-decoration:none;
-            background-color: #000000; 
-            border: none;
-            color: white;
-            padding: 16px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        } 
-}
-
-
-
-.contactoMain__button1:hover {
-    color: rgb(10, 10, 10);
-
-}
 input:focus { 
     @extend %focusContact;
 }
 textArea:focus { 
     @extend %focusContact;
 }
-
-.displayLogin input{
-    display: block;
-    width: 300px;
-    height: 30px;
-}
-
-
 .bottom-left{
     margin: 0.2rem;
 }
-
 .fotosIndex{
     margin: 2rem;
-    
 }
-
-.fotosGallery{
-    row-gap: 15px;
-    column-gap: 15px;
-    display: grid;
-    margin: 1.5rem;
-    padding: 1.5rem;
-    border: none;
-    row-gap: 4rem;
-    column-gap: 4rem;
-}
-
 .galeriaMain{
     margin-bottom: 150px;
     row-gap: 70px;
-    
-    
 }
-
-
-
-
-
-
-
 /*aca use maps en bodrder color*/
 .fotosIndex img:hover{
     @extend %gridGalery;
 }
-
 .carousel-control-next, .carousel-control-prev{
     top:350px;
 }
-
 .fotosIndex img{
     justify-content: space-around;
     @include flex(center);
@@ -285,12 +172,7 @@ textArea:focus {
         width: 75%;
         display: inline-block;
     }
-
 }
-    
-
-
-
 ul ul {
     display: none;
     position: absolute;
@@ -301,28 +183,21 @@ ul ul {
 }ul li a{
     text-decoration: none;
 }
-
 ul ul li{
     display:list-item;
     color: black;
     margin: 1px;
     width: 100px;
 }
-
 ul li:hover ul{
     display:none;
     color: black;
-    
 }
-
 ul li input{
     position: relative;
     left:40%;
     right: 40%
-    
-
 }
-
 main h3{
     display: inline-block;
     text-align: center;
@@ -334,68 +209,30 @@ a {
 a:hover {
     color: $color-principal; 
 }
-
-
-/*Gallery.html*/
-.galeriaFotos{
-    display: inline;
-}
-
-/*Help.html*/
-.mainAyuda{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 0px;
-    text-decoration:none
-}
-
-
-/*contact.html*/
 .form{
-    
     @include flex(space-around);
     margin: 0px;
     list-style: none;
 }
-/*help.html*/
-.helpMain{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 1%;
-    padding: 2%;
-}
-
-
-
-
 .galeria {
     color: white;
 }
-
 footer{
     word-spacing: 0.5 rem;
     background-color: black;
     color: white;
     margin-top: 3rem;
-    padding: auto;
-    
+    padding: auto;  
 }
-
-
 nav a{
     color: white;
 }
-
 footer a{
     color: white;
 }
-
 main section div{
     margin: auto;
 }
 main section div img{
     height: auto;
 }
-

@@ -46,12 +46,22 @@
         </div>
         <!-- navbar -->
         <div class="row ">
-            <div class="col ">
-                <ul class="listaMenu centrado">
+            <div class="col centradoNavbar">
+                <ul class="listaMenu ">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./pages/gallery.html">Gallery</a></li>
-                    <li><a href="./pages/login.html"> LogIn</a></li>
-                    <li><a href="./pages/help.html">Help</a></li>
+                    <li class="listaMenu__submenu"><a href="./pages/login.html"> LogIn</a>
+                        <ul>
+                            <li><a href="./pages/login.html">LogIn</a></li>
+                            <li><a href="./pages/login.html">Register</a></li>
+                        </ul>
+                    </li>
+                    <li class="listaMenu__submenu"><a href="./pages/help.html">Help</a>
+                        <ul>
+                            <li><a href="./pages/help.html">Refund.Return</a></li>
+                            <li><a href="./pages/gallery.html">Store</a></li>
+                        </ul>
+                    </li>
                     <li><a href="./pages/contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -97,7 +107,6 @@
                 </div>
             </div>
         </nav>
-
     </header>
     <!-- main -->
     <main class="container-fluid">
@@ -145,7 +154,7 @@
 
 
         <!-- 2nd nav bar -->
-        <H2 style="text-align: center;">TENDENCIAS</H2>
+        <H2 class="hide" style="text-align: center;">TENDENCIAS</H2>
         <ul class="listaMenu">
             <li><a href="https://www.instagram.com/stories/highlights/17871949270639534/" target="_blank">Spring</a>
             </li>
@@ -212,7 +221,7 @@
                     <div class="bottom-left">Camisa Poplin - $4020</div><button type="button"
                         class="btn btn-primary btn-dark btn-sm">Add to cart</button>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 hideImage">
+                <div class="col-12 col-md-4 col-lg-4 hide">
                     <img src="./imagenes/hasta720(18).jpg" alt="">
                     <div class="bottom-left">Jean - $7000</div><button type="button"
                         class="btn btn-primary btn-dark btn-sm">Add to cart</button>
@@ -222,22 +231,22 @@
                     <div class="bottom-left">Pantalon a rayas - $7050</div><button type="button"
                         class="btn btn-primary btn-dark btn-sm">Add to cart</button>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 hideImage">
+                <div class="col-12 col-md-4 col-lg-4 hide">
                     <img src="./imagenes/hasta720(4).jpg" alt="">
                     <div class="bottom-left">Pulover - $5900</div><button type="button"
                         class="btn btn-primary btn-dark btn-sm">Add to cart</button>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 hideImage">
+                <div class="col-12 col-md-4 col-lg-4 hide">
                     <img src="./imagenes/hasta720(5).jpg" alt="">
                     <div class="bottom-left">Short - $4800</div><button type="button"
                         class="btn btn-primary btn-dark btn-sm">Add to cart</button>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 hideImage">
+                <div class="col-12 col-md-4 col-lg-4 hide">
                     <img src="./imagenes/hasta720(8).jpg" alt="">
                     <div class="bottom-left">Blusa - $7570</div><button type="button"
                         class="btn btn-primary btn-dark btn-sm">Add to cart</button>
                 </div>
-                <div class="col-12 col-md-4 col-lg-4 hideImage">
+                <div class="col-12 col-md-4 col-lg-4 hide">
                     <img src="./imagenes/hasta720(15).jpg" alt="">
                     <div class="bottom-left">Vestido floral - $11000</div><button type="button"
                         class="btn btn-primary btn-dark btn-sm">Add to cart</button>
@@ -302,7 +311,7 @@
                                     class="btn-floating btn-sm rgba-white-slight mx-1"><i
                                         class="fab fa-youtube fa-2x"></i></a>
                             </li>
-                            <li class="list-inline-item">
+                            <li id="footerMediaQ" class="list-inline-item">
                                 <a title="acceso directo a enlace de linkedin"
                                     href="https://www.instagram.com/stories/highlights/17886755602723363/?hl=es"
                                     class="btn-floating btn-sm rgba-white-slight mx-1"><i

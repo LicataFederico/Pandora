@@ -39,16 +39,14 @@ input:focus, textArea:focus {
   #footerMediaQ {
     display: none; }
   .navbar {
-    display: block; }
+    display: block;
+    visibility: visible; }
   .navBarraIconos {
     display: flex;
     justify-content: space-evenly; }
   .centradoNavbar {
     position: relative;
     right: 15px; }
-  .logoCenter {
-    display: flex;
-    justify-content: center; }
   .bottom-left {
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +58,7 @@ input:focus, textArea:focus {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
-  .hideImage {
+  .hide {
     display: none; } }
 
 @media only screen and (max-width: 767px) {
@@ -80,9 +78,6 @@ input:focus, textArea:focus {
   .centradoNavbar {
     position: relative;
     right: 15px; }
-  .logoCenter {
-    display: flex;
-    justify-content: center; }
   .bottom-left {
     display: flex;
     flex-wrap: wrap;
@@ -94,24 +89,8 @@ input:focus, textArea:focus {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
-  .hideImage {
+  .hide {
     display: none; } }
-
-.gal-item {
-  overflow: hidden;
-  padding: 8px; }
-
-.gal-item .box {
-  height: 100%;
-  overflow: hidden; }
-
-.box img {
-  height: 100%;
-  width: auto;
-  object-fit: cover; }
-
-.carousel-control-next, .carousel-control-prev {
-  top: 150px; }
 
 /*npm run watch-css*/
 * {
@@ -226,59 +205,11 @@ section ul li {
   .h-custom-2 {
     height: 100%; } }
 
-.contactoMain {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr;
-  border: solid black; }
-  .contactoMain__inputContact {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr; }
-  .contactoMain__mapas {
-    height: 70%;
-    width: 30%; }
-  .contactoMain__button1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0px;
-    text-decoration: none;
-    background-color: #000000;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer; }
-
-.contactoMain__button1:hover {
-  color: #0a0a0a; }
-
-.displayLogin input {
-  display: block;
-  width: 300px;
-  height: 30px; }
-
 .bottom-left {
   margin: 0.2rem; }
 
 .fotosIndex {
   margin: 2rem; }
-
-.fotosGallery {
-  row-gap: 15px;
-  column-gap: 15px;
-  display: grid;
-  margin: 1.5rem;
-  padding: 1.5rem;
-  border: none;
-  row-gap: 4rem;
-  column-gap: 4rem; }
 
 .galeriaMain {
   margin-bottom: 150px;
@@ -352,33 +283,12 @@ a {
 a:hover {
   color: #b4243c; }
 
-/*Gallery.html*/
-.galeriaFotos {
-  display: inline; }
-
-/*Help.html*/
-.mainAyuda {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 0px;
-  text-decoration: none; }
-
-/*contact.html*/
 .form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 0px;
   list-style: none; }
-
-/*help.html*/
-.helpMain {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin: 1%;
-  padding: 2%; }
 
 .galeria {
   color: white; }
