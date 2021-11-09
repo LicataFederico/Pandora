@@ -136,9 +136,6 @@ input:focus, textArea:focus {
   font-family: 'Yaldevi', sans-serif;
   font-weight: 400; }
 
-.navButton {
-  margin-right: 100%; }
-
 header {
   position: relative;
   color: #b4243c; }
