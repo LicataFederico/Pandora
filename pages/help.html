@@ -28,26 +28,26 @@
 </head>
 
 <body class="container-fluid">
-    <!-- header -->
     <header>
+        <!-- header -->
         <div class="row ">
             <div class="col-8 logoCenter">
-                <a title="Pandora.com" class="logo" href="../index.html"><img src="../imagenes/logopng.png" alt="Logo"
-                        height="75"></a>
+                <a title="Pandora.com" class="logo" href="../index.html"><img src="../imagenes/logopng.png"
+                        alt="Logo de la maca pandora" height="75"></a>
             </div>
             <div class="col-4">
                 <div class="carrito">
-                    <div class="carrito__search-box">
-                        <button class="carrito__search-box__btn-search"><i class="fas fa-search"></i></button>
+                    <div class="carrito__search-box hide">
+                        <button class="carrito__search-box__btn-search "><i class="fas fa-search"></i></button>
                         <input type="text" class="carrito__search-box__input-search" placeholder="Search...">
                     </div>
-                    <a title="enlace directo a tienda de pandora" title="acceso directo a la tienda de Pandora"
-                        href="./gallery.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                    <a class="cartSize" title="enlace directo a tienda de pandora" href="../pages/gallery.html"><i
+                            class="fas fa-shopping-cart fa-2x"></i></a>
                 </div>
             </div>
         </div>
-        <!-- navbar -->
-        <div class="row ">
+        <!-- navbar-->
+        <div class="row hide">
             <div class="col centradoNavbar">
                 <ul class="listaMenu ">
                     <li><a href="../index.html">Home</a></li>
@@ -68,6 +68,53 @@
                 </ul>
             </div>
         </div>
+
+        <nav class="navbar fixed-left navbar-expand-lg navbar-light bg-white boostNav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler navButton" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="../pages/gallery.html" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Colections
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Summer</a></li>
+                                <li><a class="dropdown-item" href="#">Winter</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.instagram.com/stories/highlights/17871949270639534/">Accesories</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/login.html">Log In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/help.html">Help</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button type="button" class="btn btn-dark">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
 
 

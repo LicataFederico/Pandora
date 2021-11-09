@@ -62,7 +62,9 @@ input:focus, textArea:focus {
     justify-content: center;
     align-items: center; }
   .hide {
-    display: none; } }
+    display: none; }
+  .centrado {
+    text-align: center; } }
 
 @media only screen and (max-width: 767px) {
   .botonResponsive {
@@ -93,7 +95,9 @@ input:focus, textArea:focus {
     justify-content: center;
     align-items: center; }
   .hide {
-    display: none; } }
+    display: none; }
+  .centrado {
+    text-align: center; } }
 
 @media screen and (max-width: 900px) {
   img {
@@ -104,6 +108,11 @@ input:focus, textArea:focus {
   .h-custom-2 {
     height: 100%; } }
 
+@media screen and (min-device-width: 1200px) {
+  .boostNav {
+    display: none;
+    visibility: hidden; } }
+
 /*npm run watch-css*/
 * {
   font-family: 'Yaldevi', sans-serif;
@@ -113,9 +122,23 @@ input:focus, textArea:focus {
   margin: 0px;
   box-sizing: border-box; }
 
-.navbar {
-  display: none;
-  visibility: hidden; }
+.navbar-light .navbar-toggler {
+  border-color: white; }
+
+.dropdown-menu {
+  border: none; }
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  box-shadow: none; }
+
+.navbar a {
+  font-family: 'Yaldevi', sans-serif;
+  font-weight: 400; }
+
+.navButton {
+  position: relative;
+  right: 340px; }
 
 header {
   position: relative;
@@ -142,9 +165,6 @@ section ul li {
   list-style: none;
   color: black;
   background-color: black; }
-
-.header {
-  position: sticky; }
 
 .centrado {
   display: flex;

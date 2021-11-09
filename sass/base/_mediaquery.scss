@@ -34,6 +34,9 @@
     .hide{
         display: none;
     }
+    .centrado{
+        text-align: center;
+    }
     
     
 }
@@ -72,6 +75,9 @@
     .hide{
         display: none;
     }
+    .centrado{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -86,5 +92,13 @@
 @media (min-width: 1025px) {
     .h-custom-2 {
     height: 100%;
+    }
+}
+
+@media screen and (min-device-width: 1200px) {
+
+    .boostNav {
+        display: none;
+        visibility: hidden;
     }
 }
