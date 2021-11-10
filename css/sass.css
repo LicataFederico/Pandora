@@ -64,7 +64,10 @@ input:focus, textArea:focus {
   .hide {
     display: none; }
   .centrado {
-    text-align: center; } }
+    text-align: center; }
+  .navButton {
+    position: relative;
+    right: 235px; } }
 
 @media only screen and (max-width: 767px) {
   .botonResponsive {

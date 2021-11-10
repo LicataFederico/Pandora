@@ -12,6 +12,7 @@
     .navbar{
         display:block;
         visibility: visible;
+        
     }
     .navBarraIconos{
         display: flex;
@@ -37,7 +38,10 @@
     .centrado{
         text-align: center;
     }
-    
+    .navButton{
+        position: relative;
+        right: 235px;
+    }
     
 }
 
