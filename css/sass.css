@@ -102,7 +102,9 @@ input:focus, textArea:focus {
     text-align: center; }
   .navButton {
     position: relative;
-    right: 292px; } }
+    right: 292px; }
+  .pt-5 {
+    padding-top: 1rem !important; } }
 
 @media screen and (max-width: 900px) {
   img {
