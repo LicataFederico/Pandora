@@ -64,7 +64,9 @@ input:focus, textArea:focus {
   .hide {
     display: none; }
   .centrado {
-    text-align: center; } }
+    text-align: center; }
+  .hide {
+    display: grid; } }
 
 @media only screen and (max-width: 767px) {
   .botonResponsive {
@@ -112,6 +114,11 @@ input:focus, textArea:focus {
     height: 100%; } }
 
 @media screen and (min-device-width: 1200px) {
+  .boostNav {
+    display: none;
+    visibility: hidden; } }
+
+@media screen and (min-device-width: 1470px) {
   .boostNav {
     display: none;
     visibility: hidden; } }
