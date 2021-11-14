@@ -156,21 +156,27 @@ textArea:focus {
 .fotosIndex img:hover{
     @extend %gridGalery;
 }
-.carousel-control-next, .carousel-control-prev{
-    top:350px;
+
+section .carousel-control-next, .carousel-control-prev{
+    top:600px;
 }
+
+section .carousel-control-next-icon, .carousel-control-prev-icon {
+    height: 65px;
+    width: 65px;
+}
+
 .fotosIndex img{
     justify-content: space-around;
     @include flex(center);
     align-content: center;
     width: 100%;
-    height:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     align-items: center; 
-    height: 100%;
+    height: 90%;
 	margin-bottom: -5px;
 	transition: all 0.3s ease-out;
 	position: relative;
@@ -222,6 +228,7 @@ a:hover {
     color: white;
 }
 footer{
+    text-decoration: none;
     word-spacing: 0.5 rem;
     background-color: black;
     color: white;
@@ -232,6 +239,7 @@ nav a{
     color: white;
 }
 footer a{
+    text-decoration: none;
     color: white;
 }
 main section div{

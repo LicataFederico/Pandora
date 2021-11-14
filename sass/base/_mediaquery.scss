@@ -67,12 +67,12 @@
     }
     
     .bottom-left{
-        @include flex(center);
+        @include flex(left);
         margin: 5px;
         margin: 0.2rem;
     }
     .botonResponsive{
-        @include flex(center);
+        @include flex(left);
         align-items: center;
     }
     .hide{
@@ -88,6 +88,9 @@
     .pt-5 {
         padding-top: 1rem !important;
     }
+    .fotosIndex img{
+        height: 85%;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -97,11 +100,21 @@
         display: inline-block;
     }
 }
+@media screen and (min-width:950px) {
+    .boostNav {
+        display: none;
+        visibility: hidden;
+    }
+}
 
 
 @media (min-width: 1025px) {
     .h-custom-2 {
     height: 100%;
+    }
+    .boostNav {
+        display: none;
+        visibility: hidden;
     }
 }
 

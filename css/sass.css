@@ -88,13 +88,13 @@ input:focus, textArea:focus {
   .bottom-left {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     margin: 5px;
     margin: 0.2rem; }
   .botonResponsive {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center; }
   .hide {
     display: none; }
@@ -104,16 +104,26 @@ input:focus, textArea:focus {
     position: relative;
     right: 292px; }
   .pt-5 {
-    padding-top: 1rem !important; } }
+    padding-top: 1rem !important; }
+  .fotosIndex img {
+    height: 85%; } }
 
 @media screen and (max-width: 900px) {
   img {
     width: 75%;
     display: inline-block; } }
 
+@media screen and (min-width: 950px) {
+  .boostNav {
+    display: none;
+    visibility: hidden; } }
+
 @media (min-width: 1025px) {
   .h-custom-2 {
-    height: 100%; } }
+    height: 100%; }
+  .boostNav {
+    display: none;
+    visibility: hidden; } }
 
 @media screen and (min-device-width: 1200px) {
   .boostNav {
@@ -252,8 +262,12 @@ section ul li {
   row-gap: 70px; }
 
 /*aca use maps en bodrder color*/
-.carousel-control-next, .carousel-control-prev {
-  top: 350px; }
+section .carousel-control-next, .carousel-control-prev {
+  top: 600px; }
+
+section .carousel-control-next-icon, .carousel-control-prev-icon {
+  height: 65px;
+  width: 65px; }
 
 .fotosIndex img {
   justify-content: space-around;
@@ -262,13 +276,12 @@ section ul li {
   justify-content: center;
   align-content: center;
   width: 100%;
-  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   align-items: center;
-  height: 100%;
+  height: 90%;
   margin-bottom: -5px;
   transition: all 0.3s ease-out;
   position: relative;
@@ -322,6 +335,7 @@ a:hover {
   color: white; }
 
 footer {
+  text-decoration: none;
   word-spacing: 0.5 rem;
   background-color: black;
   color: white;
@@ -332,6 +346,7 @@ nav a {
   color: white; }
 
 footer a {
+  text-decoration: none;
   color: white; }
 
 main section div {
