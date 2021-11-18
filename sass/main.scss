@@ -15,13 +15,39 @@
     box-sizing: border-box;
 }
 
+.iframe-rwd  {
+    position: relative;
+    padding-bottom: 65.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    }
+    .iframe-rwd iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
 .navbar-light .navbar-toggler {
 
     border-color:white; 
 }
 
 
+.logIn{
+    border: white;
+}
 
+.carousel .carousel-item {
+    max-height:550px;
+}
+
+.carousel-item img {
+    object-fit:cover;
+    max-height:550px;
+}
 
 .dropdown-menu {
     border: none;
@@ -34,6 +60,11 @@
 .navbar a {
     font-family: 'Yaldevi', sans-serif;
     font-weight: 400;
+}
+
+.full-width {
+    width: 100%;
+    margin-top: 3rem;
 }
 
 
@@ -117,7 +148,6 @@ section ul li{
 }
 .listaMenu{
     @include flex(space-around);
-    margin: 2%;
     list-style: none;
     color: black;
     word-spacing: 300px;
@@ -143,13 +173,10 @@ textArea:focus {
     @extend %focusContact;
 }
 .bottom-left{
-    margin: 0.2rem;
+    margin: 0.5rem;
 }
-.fotosIndex{
-    margin: 2rem;
-}
+
 .galeriaMain{
-    margin-bottom: 150px;
     row-gap: 70px;
 }
 /*aca use maps en bodrder color*/
@@ -157,14 +184,7 @@ textArea:focus {
     @extend %gridGalery;
 }
 
-section .carousel-control-next, .carousel-control-prev{
-    top:600px;
-}
 
-section .carousel-control-next-icon, .carousel-control-prev-icon {
-    height: 65px;
-    width: 65px;
-}
 
 .fotosIndex img{
     justify-content: space-around;
@@ -177,10 +197,10 @@ section .carousel-control-next-icon, .carousel-control-prev-icon {
     position: relative;
     align-items: center; 
     height: 90%;
-	margin-bottom: -5px;
 	transition: all 0.3s ease-out;
 	position: relative;
 	z-index: 2;
+    
 }
 
 ul ul {

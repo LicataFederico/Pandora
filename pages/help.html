@@ -51,7 +51,7 @@
             <div class="col centradoNavbar">
                 <ul class="listaMenu ">
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="../pages/gallery.html">Gallery</a></li>
+                    <li><a href="../pages/gallery.html">Store</a></li>
                     <li class="listaMenu__submenu"><a href="../pages/login.html"> LogIn</a>
                         <ul>
                             <li><a href="../pages/login.html">LogIn</a></li>
@@ -129,50 +129,46 @@
     <main>
 
         <!-- acordeon de datos -->
-        <section>
-            <div>
-                <H1 style=" text-align: center;">IMPORTANT INFORMATION</H1>
+        <div>
+            <H1 style=" text-align: center;">IMPORTANT INFORMATION</H1>
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item ">
+                <h2 class="accordion-header" id="headingThree">
+                    <button style="text-align: center;background-color: black;color: white;"
+                        class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i style="color: white;" class="fas fa-undo fa-2x"></i>
+                        <h3 style="font-size:120%;color: white;"> Return/Refund</h3>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>To return one or more items from your order, please follow the below-mentioned procedure:
+                        </p>
+                        <p>1) For a simple return, please use the pre-printed return form and return label included
+                            in your parcel. Please fill in the return form provided in the packaging.</p>
+                        <p>2) Make sure all products you wish to return and all the forms, product tags,
+                            authenticity labels or cards are included in the package, the original box or an equally
+                            robust box. Attach the return label to the outside of the parcel. If you cannot find the
+                            return label, please contact our Customer Care.</p>
+                        <p>3) Contact the UPS number that you have or take the package to the nearest UPS
+                            point.
 
-            </div>
-            <div class="accordion" id="accordionExample">
+                            We recommend that you keep an eye on the tracking that you find on the return label
+                            placed inside the package, so that you can monitor the shipment of your package.</p>
+                        <p>Any issues caused by the use of a courier or a return label other than ours are not
+                            attributable to Pandora.</p>
+                        <p>Your return may take until 5 business days to be handled by our warehouse. After that you
+                            will receive a confirmation email. The refund will be processed to the credit/debit card
+                            or account originally used for payment. Refunds may take up to 10 working days to appear
+                            on your bank statement, depending on your bank.</p>
+                        <p>Please note that if you have received a gift and would like to return it for a refund,
+                            the person who originally purchased the gift will receive the refund. We apologise for
+                            any inconvenience this may cause.</p>
+                        <p>Currently, it is not possible to return the items to a Pandora Retail Store.</p>
 
-
-                <div class="accordion-item ">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button style="text-align: center;background-color: black;color: white;"
-                            class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <a href="./contact.html"><i style="color: white;" class="fas fa-undo fa-2x"></i>
-                                <h3 style="font-size:120%;color: white;"> Return/Refund</h3>
-                            </a>
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>For return/refund,click <a href="./contact.html">Here</a> to contact customer
-                                support.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button style="text-align: center;background-color: black;color: white;"
-                            class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <a href=""><i style="color: white;" class="fas fa-box fa-2x"></i>
-                                <h3 style="font-size:120%;color: white;">Shipping</h3>
-                            </a>
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Know if shipping is avaible for your city!. <a href="./contact.html">Shipping
-                                    information.</a></p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -181,45 +177,104 @@
                 <h2 class="accordion-header" id="headingTwo">
                     <button style="text-align: center;background-color: black;color: white;"
                         class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <a href="./contact.html"><i style="text-align: center;background-color: black;color: white;"
-                                class="fas fa-map-marked-alt fa-2x"></i>
-                            <h3 style="font-size:120%;color: white;">Stores</h3>
-                        </a>
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i style="color: white;" class="fas fa-box fa-2x"></i>
+                        <h3 style="font-size:120%;color: white;">Shipping</h3>
                     </button>
                 </h2>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                     data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p>Pandora Stores are all around the word.click <a
-                                href="https://www.google.com.ar/maps">here</a>
-                            to locate your nearest store.</p>
+                    <div class="accordion-body ">
+                        <p>You will find the dispatch options as well as the delivery costs and times in the
+                            following table.
+
+                            For Second Day Shipping and Next Day Shipping the order must be placed by 11 am EST in
+                            order to be shipped same day.
+
+                            Please note that all orders are subject to method of payment verification, and if we are
+                            unable to verify your purchase in time this can delay your shipment.
+
+                            Orders are usually confirmed, packaged and dispatched in 1-2 business days after the
+                            order is placed.</p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        DESTINATION</th>
+                                    <th scope="col"> OPTION </th>
+                                    <th scope="col"> COST </th>
+                                    <th scope="col"> TIME
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">U.S.
+                                    </th>
+                                    <td> UPS</td>
+                                    <td>Free</td>
+                                    <td>4-7 business days
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">U.S.</th>
+                                    <td>UPS</td>
+                                    <td>$25</td>
+                                    <td>2 business days</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">U.S.</th>
+                                    <td>UPS</td>
+                                    <td>$35</td>
+                                    <td>1 business day</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header " id="headingOne">
-                    <button style="text-align: center;background-color: black;color: white;"
-                        class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        <a href="./gallery.html"><i style="text-align: center;background-color: black;color: white;"
-                                class="fas fa-shopping-bag fa-2x"></i>
-                            <h3 style="font-size:120%;color: white;">Buy at Pandora.com</h3>
-                        </a>
-                    </button>
-            </div>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button style="text-align: center;background-color: black;color: white;"
+                    class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"><i
+                        style="text-align: center;background-color: black;color: white;"
+                        class="fas fa-map-marked-alt fa-2x"></i>
+                    <h3 style="font-size:120%;color: white;">Stores</h3>
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    <p>Buy at <a href="./gallery.html"> Pandora´s Offciail web Site</a> ,choose between
-                        all
-                        your favorite items and add them to
-                        the
-                        chart!!. </p>
+                    <div class="container">
+                        <div class="row">
+                            <h2>Store Location</h2>
+                            <div class="iframe-rwd">
+                                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0"
+                                    marginwidth="0"
+                                    src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Seattle,+WA&amp;aq=0&amp;oq=seattle&amp;sll=37.822293,-85.76824&amp;sspn=6.628688,16.907959&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Seattle,+King,+Washington&amp;z=11&amp;ll=47.60621,-122.332071&amp;output=embed"></iframe><br /><small><a
+                                        href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Seattle,+WA&amp;aq=0&amp;oq=seattle&amp;sll=37.822293,-85.76824&amp;sspn=6.628688,16.907959&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Seattle,+King,+Washington&amp;z=11&amp;ll=47.60621,-122.332071"
+                                        style="color:#0000FF;text-align:left">View Larger Map</a></small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-        </section>
+        </div>
+
+
+
+        <div>
+            <img class="full-width" alt="Sunset Panorama" src="../imagenes/banner_prueba(2).jpg" />
+        </div>
+
+
+
+
+
+
 
 
     </main>
@@ -252,8 +307,8 @@
                 <div id="footerMediaQ" class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 ">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
                     <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                    <p><i class="fas fa-envelope mr-3"></i> <a
-                            href="https://www.google.com.ar/">info-Pandora@gmail.com</a>
+                    <p><i class="fas fa-envelope mr-3"></i>
+                        <a href="mailto:info-Pandora@gmail.com">info-Pandora@gmail.com</a>
                     </p>
                     <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
                     <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>

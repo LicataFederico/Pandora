@@ -28,12 +28,12 @@
 
 
 %gridGalery{
-    transition-duration: 0.4s;
-    cursor: pointer;
+    transition-duration: 0.5s;
+    cursor:default;
     color: $color-principal;
     background-color:$color-principal;
     box-shadow: 0 0 10px $color-principal;
-    transform: scale(1.01, 1.01);
+    transform: scale(1.04, 1.04);
 	z-index: 9;
     /*aca use maps en bodrder color*/
     border-color:map-get($coloresMaps, principal);

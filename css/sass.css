@@ -12,12 +12,12 @@ input:focus, textArea:focus {
   box-shadow: 0 0 10px #b4243c; }
 
 .fotosIndex img:hover {
-  transition-duration: 0.4s;
-  cursor: pointer;
+  transition-duration: 0.5s;
+  cursor: default;
   color: #b4243c;
   background-color: #b4243c;
   box-shadow: 0 0 10px #b4243c;
-  transform: scale(1.01, 1.01);
+  transform: scale(1.04, 1.04);
   z-index: 9;
   /*aca use maps en bodrder color*/
   border-color: #b4243c; }
@@ -66,7 +66,11 @@ input:focus, textArea:focus {
   .centrado {
     text-align: center; }
   .hide {
-    display: grid; } }
+    display: grid; }
+  .table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; } }
 
 @media only screen and (max-width: 767px) {
   .botonResponsive {
@@ -106,7 +110,11 @@ input:focus, textArea:focus {
   .pt-5 {
     padding-top: 1rem !important; }
   .fotosIndex img {
-    height: 85%; } }
+    height: 85%; }
+  .table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; } }
 
 @media screen and (max-width: 900px) {
   img {
@@ -144,8 +152,32 @@ input:focus, textArea:focus {
   margin: 0px;
   box-sizing: border-box; }
 
+.iframe-rwd {
+  position: relative;
+  padding-bottom: 65.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+.iframe-rwd iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 .navbar-light .navbar-toggler {
   border-color: white; }
+
+.logIn {
+  border: white; }
+
+.carousel .carousel-item {
+  max-height: 550px; }
+
+.carousel-item img {
+  object-fit: cover;
+  max-height: 550px; }
 
 .dropdown-menu {
   border: none; }
@@ -157,6 +189,10 @@ input:focus, textArea:focus {
 .navbar a {
   font-family: 'Yaldevi', sans-serif;
   font-weight: 400; }
+
+.full-width {
+  width: 100%;
+  margin-top: 3rem; }
 
 header {
   position: relative;
@@ -238,7 +274,6 @@ section ul li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 2%;
   list-style: none;
   color: black;
   word-spacing: 300px;
@@ -252,23 +287,12 @@ section ul li {
   background-size: auto 100%; }
 
 .bottom-left {
-  margin: 0.2rem; }
-
-.fotosIndex {
-  margin: 2rem; }
+  margin: 0.5rem; }
 
 .galeriaMain {
-  margin-bottom: 150px;
   row-gap: 70px; }
 
 /*aca use maps en bodrder color*/
-section .carousel-control-next, .carousel-control-prev {
-  top: 600px; }
-
-section .carousel-control-next-icon, .carousel-control-prev-icon {
-  height: 65px;
-  width: 65px; }
-
 .fotosIndex img {
   justify-content: space-around;
   display: flex;
@@ -282,7 +306,6 @@ section .carousel-control-next-icon, .carousel-control-prev-icon {
   position: relative;
   align-items: center;
   height: 90%;
-  margin-bottom: -5px;
   transition: all 0.3s ease-out;
   position: relative;
   z-index: 2; }
