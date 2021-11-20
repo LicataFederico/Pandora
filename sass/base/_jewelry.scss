@@ -1,0 +1,35 @@
+.imagenesJewelry img {
+    filter: gray; 
+    -webkit-filter: grayscale(1);  
+}
+.imagenesJewelry img:hover {
+    filter: none; 
+    -webkit-filter: grayscale(0);
+
+}
+.thumbnails {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 0.1rem;
+    row-gap: 1.5rem;
+}
+.thumbnails a {
+    flex-grow: 1;
+    overflow:hidden;
+}
+.thumbnails img {
+    object-fit: cover;
+    transition: transform .3s;
+}
+.thumbnails a:hover img {
+    transform: scale(1.05);
+}
+.imagenesJewelry{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
