@@ -35,7 +35,7 @@ input:focus, textArea:focus {
   width: auto;
   object-fit: cover; }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 640px) {
   #footerMediaQ {
     display: none; }
   .cartSize {
@@ -65,48 +65,10 @@ input:focus, textArea:focus {
     display: none; }
   .centrado {
     text-align: center; }
-  .hide {
-    display: grid; }
   .table {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; } }
-
-@media only screen and (max-width: 767px) {
-  .botonResponsive {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; }
-  #footerMediaQ {
-    display: none; }
-  .navbar {
-    display: block;
-    visibility: visible; }
-  .navBarraIconos {
-    display: flex;
-    justify-content: space-evenly; }
-  .centradoNavbar {
-    position: relative;
-    right: 15px; }
-  .bottom-left {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin: 5px;
-    margin: 0.2rem; }
-  .botonResponsive {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items: center; }
-  .hide {
-    display: none; }
-  .centrado {
-    text-align: center; }
-  .navButton {
-    position: relative;
-    right: 292px; }
+    justify-content: center; }
   .pt-5 {
     padding-top: 1rem !important; }
   .fotosIndex img {
@@ -116,29 +78,7 @@ input:focus, textArea:focus {
     flex-wrap: wrap;
     justify-content: center; } }
 
-@media screen and (max-width: 900px) {
-  img {
-    width: 75%;
-    display: inline-block; } }
-
-@media screen and (min-width: 950px) {
-  .boostNav {
-    display: none;
-    visibility: hidden; } }
-
-@media (min-width: 1025px) {
-  .h-custom-2 {
-    height: 100%; }
-  .boostNav {
-    display: none;
-    visibility: hidden; } }
-
-@media screen and (min-device-width: 1200px) {
-  .boostNav {
-    display: none;
-    visibility: hidden; } }
-
-@media screen and (min-device-width: 1470px) {
+@media screen and (min-width: 641px) {
   .boostNav {
     display: none;
     visibility: hidden; } }
