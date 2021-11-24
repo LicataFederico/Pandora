@@ -139,7 +139,7 @@ input:focus, textArea:focus {
 
 .full-width {
   width: 100%;
-  margin-top: 3rem; }
+  margin-top: 10rem; }
 
 .carousel .carousel-item {
   max-height: 550px; }
@@ -253,7 +253,68 @@ section ul li {
   word-spacing: 300px;
   text-decoration: none; }
 
-/*npm run watch-css*/
+section article nav.primary-navigation {
+  margin: auto;
+  display: block;
+  padding: 120px 0 0 0;
+  text-align: center;
+  font-size: 16px; }
+  section article nav.primary-navigation ul li {
+    list-style: none;
+    margin: 0 auto;
+    border-left: 2px solid #3ca0e7;
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-family: arvo; }
+  section article nav.primary-navigation li a {
+    color: black; }
+  section article nav.primary-navigation li a:hover {
+    color: #3ca0e7; }
+  section article nav.primary-navigation li:hover {
+    cursor: pointer; }
+  section article nav.primary-navigation ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    padding-left: 0;
+    left: 0;
+    display: none;
+    background: white; }
+  section article nav.primary-navigation ul li:hover > ul,
+  section article nav.primary-navigation ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    min-width: 250px;
+    text-align: left;
+    padding-top: 20px;
+    box-shadow: 0px 3px 5px -1px #ccc; }
+  section article nav.primary-navigation ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    border-style: none; }
+  section article nav.primary-navigation ul li ul li a:hover {
+    padding-left: 10px;
+    border-left: 2px solid #3ca0e7;
+    transition: all 2s ease; }
+
+section article nav ul li a {
+  text-decoration: none; }
+  section article nav ul li a:hover {
+    color: #3CA0E7; }
+
+section article ul li ul li a {
+  transition: all 2s ease; }
+
+.fotosSiteMap {
+  height: 20rem;
+  width: 20rem; }
+
+/*npm run watch-css   */
 /* main.scss posee codigo que de alguna forma afecta a todos los html*/
 * {
   font-family: 'Yaldevi', sans-serif;
@@ -282,7 +343,7 @@ section ul li {
   position: relative;
   align-items: center;
   height: 90%;
-  transition: all 0.1s ease-out;
+  transition: all 0.5s ease-out;
   position: relative;
   z-index: 2; }
 
