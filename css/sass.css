@@ -148,15 +148,17 @@ input:focus, textArea:focus {
   object-fit: cover;
   max-height: 550px; }
 
-/*npm run watch-css*/
-/* main.scss posee codigo que de alguna forma afecta a todos los html*/
-* {
-  font-family: 'Yaldevi', sans-serif;
-  font-weight: bold;
+footer {
   text-decoration: none;
-  list-style: none;
-  margin: 0px;
-  box-sizing: border-box; }
+  word-spacing: 0.5 rem;
+  background-color: black;
+  color: white;
+  margin-top: 3rem;
+  padding: auto; }
+
+footer a {
+  text-decoration: none;
+  color: white; }
 
 .navbar-light .navbar-toggler {
   border-color: white; }
@@ -251,13 +253,22 @@ section ul li {
   word-spacing: 300px;
   text-decoration: none; }
 
-.bottom-left {
-  margin: 0.5rem; }
+/*npm run watch-css*/
+/* main.scss posee codigo que de alguna forma afecta a todos los html*/
+* {
+  font-family: 'Yaldevi', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  margin: 0px;
+  box-sizing: border-box; }
 
 .galeriaMain {
   row-gap: 70px; }
 
-/*aca use maps en bodrder color*/
+.bottom-left {
+  margin: 0.5rem; }
+
 .fotosIndex img {
   justify-content: space-around;
   display: flex;
@@ -319,23 +330,8 @@ a:hover {
   margin: 0px;
   list-style: none; }
 
-footer {
-  text-decoration: none;
-  word-spacing: 0.5 rem;
-  background-color: black;
-  color: white;
-  margin-top: 3rem;
-  padding: auto; }
-
 nav a {
-  color: white; }
-
-footer a {
-  text-decoration: none;
   color: white; }
 
 main section div {
   margin: auto; }
-
-main section div img {
-  height: auto; }

@@ -2,13 +2,11 @@
     filter: gray; 
     -webkit-filter: grayscale(1);  
     cursor:default;
-    
 }
 .imagenesJewelry img:hover {
     filter: none; 
     -webkit-filter: grayscale(0);
     cursor:default;
-
 }
 .thumbnails {
     display: flex;
