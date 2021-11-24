@@ -85,28 +85,34 @@ input:focus, textArea:focus {
 
 .imagenesJewelry img {
   filter: gray;
-  -webkit-filter: grayscale(1); }
+  -webkit-filter: grayscale(1);
+  cursor: default; }
 
 .imagenesJewelry img:hover {
   filter: none;
-  -webkit-filter: grayscale(0); }
+  -webkit-filter: grayscale(0);
+  cursor: default; }
 
 .thumbnails {
   display: flex;
   justify-content: space-evenly;
   column-gap: 0.1rem;
-  row-gap: 1.5rem; }
+  row-gap: 1.5rem;
+  cursor: default; }
 
 .thumbnails a {
   flex-grow: 1;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: default; }
 
 .thumbnails img {
   object-fit: cover;
-  transition: transform .3s; }
+  transition: transform .3s;
+  cursor: default; }
 
 .thumbnails a:hover img {
-  transform: scale(1.05); }
+  transform: scale(1.05);
+  cursor: default; }
 
 .imagenesJewelry {
   display: flex;
@@ -114,16 +120,8 @@ input:focus, textArea:focus {
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
-  height: 100%; }
-
-/*npm run watch-css*/
-* {
-  font-family: 'Yaldevi', sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  list-style: none;
-  margin: 0px;
-  box-sizing: border-box; }
+  height: 100%;
+  cursor: default; }
 
 .iframe-rwd {
   position: relative;
@@ -139,8 +137,9 @@ input:focus, textArea:focus {
   width: 100%;
   height: 100%; }
 
-.navbar-light .navbar-toggler {
-  border-color: white; }
+.full-width {
+  width: 100%;
+  margin-top: 3rem; }
 
 .carousel .carousel-item {
   max-height: 550px; }
@@ -148,6 +147,19 @@ input:focus, textArea:focus {
 .carousel-item img {
   object-fit: cover;
   max-height: 550px; }
+
+/*npm run watch-css*/
+/* main.scss posee codigo que de alguna forma afecta a todos los html*/
+* {
+  font-family: 'Yaldevi', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  margin: 0px;
+  box-sizing: border-box; }
+
+.navbar-light .navbar-toggler {
+  border-color: white; }
 
 .dropdown-menu {
   border: none; }
@@ -159,10 +171,6 @@ input:focus, textArea:focus {
 .navbar a {
   font-family: 'Yaldevi', sans-serif;
   font-weight: 400; }
-
-.full-width {
-  width: 100%;
-  margin-top: 3rem; }
 
 header {
   position: relative;
@@ -189,12 +197,6 @@ section ul li {
   list-style: none;
   color: black;
   background-color: black; }
-
-.centrado {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 5px; }
 
 .carrito {
   display: flex;
@@ -243,18 +245,11 @@ section ul li {
 .listaMenu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   color: black;
   word-spacing: 300px;
   text-decoration: none; }
-
-.bg-image-vertical {
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: auto 100%; }
 
 .bottom-left {
   margin: 0.5rem; }
@@ -276,7 +271,7 @@ section ul li {
   position: relative;
   align-items: center;
   height: 90%;
-  transition: all 0.3s ease-out;
+  transition: all 0.1s ease-out;
   position: relative;
   z-index: 2; }
 
@@ -323,9 +318,6 @@ a:hover {
   justify-content: space-around;
   margin: 0px;
   list-style: none; }
-
-.galeria {
-  color: white; }
 
 footer {
   text-decoration: none;

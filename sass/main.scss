@@ -5,8 +5,14 @@
 @import "./base/_contact.scss";
 @import "./base/_mediaquery.scss";
 @import "./base/_jewelry.scss";
+@import "./base/_help.scss";
+@import "./base/_index.scss";
 
 /*npm run watch-css*/
+
+
+
+/* main.scss posee codigo que de alguna forma afecta a todos los html*/
 *{
     font-family: 'Yaldevi', sans-serif;
     font-weight: bold;
@@ -16,38 +22,12 @@
     box-sizing: border-box;
 }
 
-.iframe-rwd  {
-    position: relative;
-    padding-bottom: 65.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-    }
-    .iframe-rwd iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    }
+
+
 
 .navbar-light .navbar-toggler {
-
     border-color:white; 
 }
-
-
-
-
-.carousel .carousel-item {
-    max-height:550px;
-}
-
-.carousel-item img {
-    object-fit:cover;
-    max-height:550px;
-}
-
 .dropdown-menu {
     border: none;
 }
@@ -61,10 +41,7 @@
     font-weight: 400;
 }
 
-.full-width {
-    width: 100%;
-    margin-top: 3rem;
-}
+
 
 
 header {
@@ -89,10 +66,7 @@ section ul li{
     color: black;
     background-color:black
 }
-.centrado {
-    @include flex(space-evenly);
-    margin: 5px;
-}
+
 .carrito {
     @include flex(flex-end);
     align-items: center;
@@ -146,7 +120,7 @@ section ul li{
     } 
 }
 .listaMenu{
-    @include flex(space-around);
+    @include flex(space-between);
     list-style: none;
     color: black;
     word-spacing: 300px;
@@ -157,14 +131,6 @@ section ul li{
         text-decoration: none;
     }
 }
-.bg-image-vertical {
-    position: relative;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: auto 100%;
-}
-
 input:focus { 
     @extend %focusContact;
 }
@@ -196,7 +162,7 @@ textArea:focus {
     position: relative;
     align-items: center; 
     height: 90%;
-	transition: all 0.3s ease-out;
+	transition: all 0.1s ease-out;
 	position: relative;
 	z-index: 2;
     
@@ -243,9 +209,7 @@ a:hover {
     margin: 0px;
     list-style: none;
 }
-.galeria {
-    color: white;
-}
+
 footer{
     text-decoration: none;
     word-spacing: 0.5 rem;
