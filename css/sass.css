@@ -139,7 +139,7 @@ input:focus, textArea:focus {
 
 .full-width {
   width: 100%;
-  margin-top: 10rem; }
+  margin-top: 3rem; }
 
 .carousel .carousel-item {
   max-height: 550px; }
@@ -250,7 +250,6 @@ section ul li {
   justify-content: space-between;
   list-style: none;
   color: black;
-  word-spacing: 300px;
   text-decoration: none; }
 
 section article nav.primary-navigation {

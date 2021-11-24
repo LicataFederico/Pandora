@@ -91,7 +91,7 @@ section ul li{
     @include flex(space-between);
     list-style: none;
     color: black;
-    word-spacing: 300px;
+    
     text-decoration: none;
     %__submenu{
         position: relative;
