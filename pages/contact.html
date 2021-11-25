@@ -145,7 +145,7 @@
                         <div class="card-header bg-black text-white"><i class="fa fa-envelope"></i> SEND A MESSAGE
                         </div>
                         <div class="card-body">
-                            <form>
+                            <form name="contact" method="POST" data-netlify="true">
                                 <div class="form-group">
                                     <label for="name">Name</label>
                                     <input type="text" class="form-control" id="name" aria-describedby="name"
@@ -155,7 +155,6 @@
                                     <label for="email">Email address</label>
                                     <input type="email" class="form-control" id="email" aria-describedby="email"
                                         placeholder="Enter email" required>
-
                                 </div>
                                 <!-- message form,se puede modificar el tamaño en la pagina-->
                                 <div class="form-group">
@@ -164,7 +163,7 @@
                                 </div>
                                 <!-- message form -->
                                 <div class="mx-auto">
-                                    <button style="margin-top: 10px;" type="button"
+                                    <button style="margin-top: 10px;" type="submit"
                                         class="btn btn-danger">Submit</button>
                                 </div>
                             </form>
