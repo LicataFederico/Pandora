@@ -11,7 +11,7 @@ input:focus, textArea:focus {
   border-color: #b4243c;
   box-shadow: 0 0 10px #b4243c; }
 
-.imagenesJewelry img:hover, .fotosIndex img:hover {
+.fotosIndex img:hover {
   transition-duration: 0.5s;
   cursor: default;
   color: #b4243c;
@@ -82,26 +82,6 @@ input:focus, textArea:focus {
   .boostNav {
     display: none;
     visibility: hidden; } }
-
-.imagenesJewelry img {
-  filter: none; }
-
-.thumbnails {
-  display: flex;
-  justify-content: space-evenly;
-  column-gap: 0.1rem;
-  row-gap: 1.5rem; }
-
-.thumbnails img {
-  cursor: default; }
-
-.imagenesJewelry {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 100%; }
 
 .iframe-rwd {
   position: relative;
