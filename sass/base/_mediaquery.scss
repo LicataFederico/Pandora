@@ -1,8 +1,33 @@
-
+@media only screen and (max-width:  375px) {
+    .logo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:start;
+        margin:0.6rem;
+        
+    }
+    header div a img{
+        
+        height: 35px;
+        
+    }
+    #her{
+        font-size: 22px;
+        text-align: center;
+    }
+}
 
 @media only screen and (max-width: 640px) {
     #footerMediaQ{
         display:none;
+    }
+    #her{
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .titulo{
+        font-size: 25px;
     }
     .cartSize{
         font-size: 12px;
@@ -12,14 +37,6 @@
         display:block;
         visibility: visible;
         
-    }
-    .navBarraIconos{
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .centradoNavbar{
-        position: relative;
-        right: 15px;
     }
     .bottom-left{
         @include flex(center);
@@ -51,6 +68,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    div a img{
+        height: 50px;
     }
     
 }

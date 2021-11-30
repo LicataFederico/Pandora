@@ -14,7 +14,6 @@
 /*npm run watch-css*/
 
 
-
 /* main.scss posee codigo que de alguna forma afecta a todos los html*/
 *{
     font-family: 'Yaldevi', sans-serif;
@@ -22,14 +21,13 @@
     text-decoration: none;
     list-style: none;
     margin: 0px;
+    
     box-sizing: border-box;
 }
 
 
 
-
-
-
+.navbar.navbar-default, .navbar button.navbar-toggle { border: none; }
 
 .galeriaMain{
     row-gap: 70px;
@@ -57,31 +55,13 @@
 	z-index: 2;
     
 }
-ul ul {
-    display: none;
-    position: absolute;
-    width: 100%;
-    top: 1rem;
-    left: 0.5rem;
-    color: black;
-}ul li a{
+
+ul li a{
     text-decoration: none;
 }
-ul ul li{
-    display:list-item;
-    color: black;
-    margin: 1px;
-    width: 100px;
-}
-ul li:hover ul{
-    display:none;
-    color: black;
-}
-ul li input{
-    position: relative;
-    left:40%;
-    right: 40%
-}
+
+
+
 main h3{
     display: inline-block;
     text-align: center;
@@ -99,10 +79,17 @@ a:hover {
     list-style: none;
 }
 
-nav a{
-    color: white;
-}
+
 main section div{
     margin: auto;
+}
+
+a.btn {
+    color: white;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    border: solid #b4243c;
+    background-color: #b4243c;
 }
 
