@@ -1,12 +1,5 @@
 @media only screen and (max-width:  321px) {
     .listaMid{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-right: 20px;
-    margin: 2rem;
-    }
-    .listaMid{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -14,6 +7,7 @@
         margin: 2rem;
     }
 }
+
 @media only screen and (max-width:  375px) {
     .logo{
         display: flex;
@@ -99,6 +93,12 @@
         font-size: 22px;
     }
     
+}
+@media (max-width: 767px) {
+    .navbar-toggle {
+        border: none;
+        outline: none;
+    }
 }
 
 

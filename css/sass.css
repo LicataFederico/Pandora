@@ -27,12 +27,6 @@
   .listaMid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding-right: 20px;
-    margin: 2rem; }
-  .listaMid {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     padding-right: 20px;
     margin: 2rem; } }
@@ -98,6 +92,11 @@
     height: 50px; }
   h1 {
     font-size: 22px; } }
+
+@media (max-width: 767px) {
+  .navbar-toggle {
+    border: none;
+    outline: none; } }
 
 @media screen and (min-width: 641px) {
   .boostNav {
@@ -205,10 +204,6 @@ section ul li {
   list-style: none;
   margin: 0px;
   box-sizing: border-box; }
-
-.navbar-toggle {
-  border: none;
-  outline: none; }
 
 .navbar.navbar-default, .navbar button.navbar-toggle {
   border: none; }
