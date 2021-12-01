@@ -92,4 +92,10 @@ a.btn {
     border: solid #b4243c;
     background-color: #b4243c;
 }
+.cookiesCenter{
+    @include flex(center);
+    padding: 1rem;
+    text-align:center !important;
+}
+
 
