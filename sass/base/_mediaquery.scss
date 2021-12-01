@@ -45,7 +45,7 @@
         
     }
     .bottom-left{
-        @include flex(center);
+        @include flex(start);
         margin: 5px;
         margin: 0.2rem;
     }

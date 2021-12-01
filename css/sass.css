@@ -56,7 +56,7 @@
   .bottom-left {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     margin: 5px;
     margin: 0.2rem; }
   .botonResponsive {
